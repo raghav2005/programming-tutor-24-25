@@ -1,5 +1,25 @@
 # Week 2
 
+- [Week 2](#week-2)
+  - [Leetcode](#leetcode)
+  - [Jobs Stuff](#jobs-stuff)
+    - [CV](#cv)
+    - [LinkedIn](#linkedin)
+    - [Tracker Links](#tracker-links)
+    - [General Advice](#general-advice)
+  - [Git + Terminal](#git--terminal)
+    - [Basic Terminal Commands](#basic-terminal-commands)
+    - [Git Setup](#git-setup)
+    - [Git](#git)
+      - [Creating a new repo](#creating-a-new-repo)
+      - [Other commands](#other-commands)
+    - [Other Information](#other-information)
+      - [Package Managers](#package-managers)
+        - [MacOS](#macos)
+        - [Windows](#windows)
+        - [Linux](#linux)
+      - [Misc](#misc)
+
 ## Leetcode
 
 - <https://leetcode.com/problems/merge-strings-alternately/>
