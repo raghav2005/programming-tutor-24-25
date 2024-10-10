@@ -7,6 +7,7 @@
     - [LinkedIn](#linkedin)
     - [Tracker Links](#tracker-links)
     - [General Advice](#general-advice)
+  - [C](#c)
   - [Git + Terminal](#git--terminal)
     - [Basic Terminal Commands](#basic-terminal-commands)
     - [Git Setup](#git-setup)
@@ -51,6 +52,10 @@
 
 - Interviews (different types of questions). Hireviews
 - Change CV + LinkedIn to be 2027 Grad Year for whoever is on MEng
+
+## C
+
+We covered pointers in today's session. Refer to [random.c](random.c).
 
 ## Git + Terminal
 
