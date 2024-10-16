@@ -1,8 +1,7 @@
 # programming-tutoring-24-25
 
-- [programming-tutoring-24-25](#programming-tutoring-24-25)
-  - [Week 1](#week-1)
-  - [Week 2](#week-2)
+- [Week 1](#week-1)
+- [Week 2](#week-2)
 
 ## Week 1
 
