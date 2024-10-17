@@ -79,7 +79,7 @@ char* gcdOfStrings(char* str1, char* str2) {
     free(total_1);
     free(total_2);
 
-    return result;g
+    return result;
 }
 
 int main() {
