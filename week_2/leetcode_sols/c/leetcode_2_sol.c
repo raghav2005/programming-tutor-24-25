@@ -79,5 +79,12 @@ char* gcdOfStrings(char* str1, char* str2) {
     free(total_1);
     free(total_2);
 
-    return result;
+    return result;g
+}
+
+int main() {
+    char* s = gcdOfStrings("ABCABC", "ABC");
+    printf("%s\n", s);
+
+    return 0;
 }

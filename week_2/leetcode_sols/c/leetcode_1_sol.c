@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 char *mergeAlternately(char *word1, char *word2) {
     int word1_len = strlen(word1);
@@ -18,4 +20,11 @@ char *mergeAlternately(char *word1, char *word2) {
 
     *(new_word + k) = '\0';
     return new_word;
+}
+
+int main() {
+    char* s = mergeAlternately("ace", "bdfghi");
+    printf("%s\n", s);
+
+    return 0;
 }
