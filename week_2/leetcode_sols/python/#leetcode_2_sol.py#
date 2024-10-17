@@ -36,6 +36,5 @@ print(x.gcdOfStrings("ABCABC", "ABC"))
 
 
 
-"ABCABCABC"  "ABCABCABC"
-"BCD" "BCD"
+"ABCABCABC" "ABCABCABC"
 
