@@ -22,8 +22,12 @@
 
 ## Leetcode
 
-- <https://leetcode.com/problems/merge-strings-alternately/>
-- <https://leetcode.com/problems/greatest-common-divisor-of-strings/>
+- [Merge Strings Alternately (Easy)](https://leetcode.com/problems/merge-strings-alternately/)
+  - [Python Solution](leetcode_sols/python/leetcode_1_sol.py)
+  - [C Solution](leetcode_sols/c/leetcode_1_sol.c)
+- [Greatest Common Divisor of Strings (Easy)](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
+  - [Python Solution](leetcode_sols/python/leetcode_2_sol.py)
+  - [C Solution](leetcode_sols/c/leetcode_2_sol.c)
 
 ## Jobs Stuff
 
