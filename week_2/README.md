@@ -19,6 +19,7 @@
       - [Windows](#windows)
       - [Linux](#linux)
     - [Misc](#misc)
+- [Sketches](#sketches)
 
 ## Leetcode
 
@@ -162,3 +163,7 @@ If you have a Linux computer, *PLEASE BE MY FRIEND*. Ok, but in all seriousness,
 If you love configuring your own setups, look into [tmux](https://github.com/tmux/tmux/wiki) and [emacs](https://www.gnu.org/software/emacs/).  
 Anyone who knows me well knows just how much time I've wasted on this stuff, but I seriously enjoy it. It won't help you in any way, apart from maybe speeding up your workflow, but I genuinely find it fun to mess with these kinds of things. Plus, it's cool to look at.  
 If you ever do decide to look into these, please let me know. I need someone to geek out about this stuff with PLEASE.
+
+## Sketches
+
+For the diagrams drawn during the session, refer to [this pdf](sketches.pdf).
