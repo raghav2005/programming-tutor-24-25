@@ -1,6 +1,6 @@
 class Animal:
-    def __init__(self, color):
-        self.color = color
+    def __init__(self, color): # must be defined for all classes for which an object will be instantiated
+        self.color = color # instance variable
     
     def speak(self, text):
         print(text)
@@ -9,13 +9,16 @@ class Animal:
         self.color = color
         self.speak("hi")
 
-    def __str__(self):
+    def change_color(self): # example of overriding - depending on arguments, the function change_color behaves differently
+        self.color = "default"
+
+    def __str__(self): # default method called when printing an object of this class
         return "asdf"
 
 
-class Legs4(Animal):
+class Legs4(Animal): # Legs4 inherits from Animal
     def __init__(self, color):
-        super().__init__(color)
+        super().__init__(color) # call the Animal constructor
 
     def speak(self):
         print("i have 4 legs")
@@ -25,7 +28,7 @@ class Legs4(Animal):
 
 class Legs2(Animal):
     
-    num_legs = 2
+    num_legs = 2 # class variable
 
     def __init__(self, color, text):
         super().__init__(color)
@@ -55,10 +58,15 @@ z.speak()
 
 a = Legs2("orange", "hi")
 print(a.num_legs)
-# a.num_legs = 5
-# print(a.num_legs)
-# print(z.num_legs)
+Legs2.num_legs = 5 # change for all classes
+print(a.num_legs)
+print(z.num_legs)
+a.num_legs = 2 # this would change it only for a (essentially creates a new instance variable from the class variable)
+print(a.num_legs)
+print(z.num_legs)
 
-# x.change_color()
-# x.color = ""
+x.change_color()
+print(x.color)
+x.color = ""
+print(x.color)
 print(x)
