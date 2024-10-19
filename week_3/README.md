@@ -1,4 +1,4 @@
-# Week 2
+# Week 3
 
 - [Leetcode](#leetcode)
 - [C](#c)
