@@ -57,7 +57,7 @@ We covered the following things in this week's session:
 
 NOTE: look into `leaks` command (might need to `brew install leaks` on mac) as an alternative for `valgrind`). If you're on windows, WSL should allow you to install valgrind with `apt install valgrind` or using whatever package manager is available in your version of WSL.
 
-The file [struct_prep.c](struct_prep.c) contains all examples for everything - I created this before the session, so any code that I forgot to show during the session will be in here.
+The file [struct\_prep.c](struct_prep.c) contains all examples for everything - I created this before the session, so any code that I forgot to show during the session will be in here.
 
 <!-- 
 ## Sketches
