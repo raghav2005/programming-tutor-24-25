@@ -13,7 +13,7 @@ class Animal:
 
     def change_color(
         self,
-    ):  # example of overriding - depending on arguments, the function change_color behaves differently
+    ):  # example of overloading - depending on arguments, the function change_color behaves differently
         self.color = "default"
 
     def __str__(self):  # default method called when printing an object of this class
