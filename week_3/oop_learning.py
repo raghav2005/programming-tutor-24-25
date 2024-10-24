@@ -11,9 +11,7 @@ class Animal:
         self.color = color
         self.speak("hi")
 
-    def change_color(
-        self,
-    ):  # example of overloading - depending on arguments, the function change_color behaves differently
+    def change_color(self):  # example of overloading - depending on arguments, the function change_color behaves differently
         self.color = "default"
 
     def __str__(self):  # default method called when printing an object of this class
