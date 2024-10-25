@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-typedef char a_name[12];
+typedef char a_name[12]; // use a_name for any variable to refer to a list of 12 chars
 
 struct Coord
 {
@@ -61,10 +61,10 @@ int main() {
 
     Coord new_coord;
     char *s = "hello";
-    new_coord.new_name = s;
+    new_coord.new_name = s; // this works with pointers only
     printf("%s, %d\n", new_coord.new_name, new_coord.x);
 
-    Coord another = {"hi", 7, "bye"};
+    Coord another = {"hi", 7, "bye"}; // initialisation for a char* does work like this too
     printf("%s, %d, %s\n", another.name, another.x, another.new_name);
 
     Coord another2 = {.x = 7, .new_name = "hello", .name = "goodbye"};
@@ -81,7 +81,7 @@ int main() {
         *(list2.vals + i) = 10 - i;
     }
 
-    for (int i = 0; i < 2; i++)
+    for (int i = 0; i < 2; i++) // example of for loop syntax with {} - only works if there's only a single line to be included in the loop
         printf("list1[%d]: %d, list2[%d]: %d\n", i, *(list1.vals + i), i, *(list2.vals + i));
 
     int *copy_list1_vals = list1.vals;
@@ -100,17 +100,24 @@ int main() {
     Person *firstPerson = createPerson("Raghav", 19, NULL);
     printf("\n%s, %d, %p\n", firstPerson->name, firstPerson->age, firstPerson->next);
 
-    Person firstPersonVal = *firstPerson;
+    Person firstPersonVal = *firstPerson; // new copy in memory (age address copied, not full memory in heap)
     printf("%s, %d, %p\n\n", firstPersonVal.name, firstPersonVal.age, firstPersonVal.next);
     firstPersonVal.age = 20;
     printf("%s, %d, %p\n", firstPerson->name, firstPerson->age, firstPerson->next);
     printf("%s, %d, %p\n", firstPersonVal.name, firstPersonVal.age, firstPersonVal.next);
 
-    Person *firstPersonVal2 = firstPerson;
+    Person *firstPersonVal2 = firstPerson; // same as above but other way (i.e. struct -> struct *)
     printf("%s, %d, %p\n\n", firstPersonVal2->name, firstPersonVal2->age, firstPersonVal2->next);
     firstPersonVal2->age = 21;
     printf("%s, %d, %p\n", firstPerson->name, firstPerson->age, firstPerson->next);
-    printf("%s, %d, %p\n", firstPersonVal2->name, firstPersonVal2->age, firstPersonVal2->next);
+    printf("%s, %d, %p\n\n", firstPersonVal2->name, firstPersonVal2->age, firstPersonVal2->next);
+
+    printf("firstPerson address: %p\n", &firstPerson);
+    printf("firstPersonVal address: %p\n", &firstPersonVal);
+    printf("firstPersonVal2 address: %p\n", &firstPersonVal2);
+
+    free(firstPerson->name);
+    free(firstPerson);
     
     return 0;
 }

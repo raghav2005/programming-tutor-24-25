@@ -5,6 +5,7 @@
   - [Python](#python)
   - [C](#c)
 - [C Structs](#c-structs)
+- [Sketches](#sketches)
 
 ## Leetcode
 
@@ -53,14 +54,12 @@ We covered the following things in this week's session:
   - struct as an attribute
   - copying struct pointers / pointing to the same struct
 
-> Potentially look at enums, .h files, and -c
-
-NOTE: look into `leaks` command (might need to `brew install leaks` on mac) as an alternative for `valgrind`). If you're on windows, WSL should allow you to install valgrind with `apt install valgrind` or using whatever package manager is available in your version of WSL.
+NOTE: look into `leaks` command for mac, otherwise use `valgrind` directly on linux or WSL. Refer to [this website](https://computerscience.chemeketa.edu/guides/valgrind/) for more information.
 
 The file [struct\_prep.c](struct_prep.c) contains all examples for everything - I created this before the session, so any code that I forgot to show during the session will be in here.
 
-<!-- 
+The actual code written during the session can be found at [struct\_learning.c](struct_learning.c).
+
 ## Sketches
 
 For the diagrams drawn during the session, refer to [this pdf](sketches.pdf).
- -->
