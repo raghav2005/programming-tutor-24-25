@@ -42,3 +42,7 @@ run: $(TARGET)
 # phony targets (targets that don’t represent files)
 # prevents conflicts if files with these names already exist in the directory
 .PHONY: all clean run
+
+# all:
+# 	gcc c_learning.c add_func.c -o c_learning
+# 	./c_learning
