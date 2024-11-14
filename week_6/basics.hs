@@ -80,7 +80,7 @@ addition2 x = partial_add
 
 -- higher-order functions - functions where functions can be passed as arguments or returned as values
 apply_twice :: (a -> a) -> a -> a -- a is a generic type variable
-apply_twice f x = f (f x)
+apply_twice f x = (f (f x)) -- f(f(x))
 -- succ is the same as + 1, so apply_twice succ 3 == 5
 
 
@@ -114,6 +114,12 @@ factorial 0 = 1
 factorial 1 = 1 -- don't explicitly need this, just 0 and n cases would suffice
 factorial 2 = 2
 factorial n = n * factorial (n - 1)
+
+func1 :: Int -> Int -> Int
+func1 1 1 = 0
+func1 1 _ = 1
+func1 _ 1 = 1
+func1 x y = x + y + 1
 
 
 -- list comprehension is also very useful in haskell
