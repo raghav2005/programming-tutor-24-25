@@ -4,6 +4,7 @@
 - [Week 2](#week-2)
 - [Week 3](#week-3)
 - [Week 4](#week-4)
+- [Week 5](#week-5)
 
 ## Week 1
 
@@ -20,3 +21,7 @@ Refer to [Week 3's README file](week_3/README.md) for what we did during this se
 ## Week 4
 
 Refer to [Week 4's README file](week_4/README.md) for what we did during this session.
+
+## Week 5
+
+Refer to [Week 5's README file](week_5/README.md) for what we did during this session.
