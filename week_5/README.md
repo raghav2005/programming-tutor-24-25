@@ -32,7 +32,7 @@
 - enums
 - header files
   - .h files - public declarations, .c files - private definitions
-  - header file should ONLY CONTAIN DECLARATIONS THAT DON'T REQUIRE MEMORY ALLOCATION - so, for example, no const int variable definitions should go into a header file (instead, you could define them in the relevant .c file and declare teh const variables as extern in the .h file OR replace them with #defines)
+  - header file should ONLY CONTAIN DECLARATIONS THAT DON'T REQUIRE MEMORY ALLOCATION - so, for example, no const int variable definitions should go into a header file (instead, you could define them in the relevant .c file and declare the const variables as extern in the .h file OR replace them with #defines)
 - how the compiler actually works
   - ![Compiler Flow (stolen from Prof. Graham's slides)](compiler_flow.png)
 
