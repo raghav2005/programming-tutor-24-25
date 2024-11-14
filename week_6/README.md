@@ -12,7 +12,34 @@
 
 ## Haskell
 
-- 
+- comments
+  - single-line (--)
+  - multi-line ({- -})
+- primitive data types
+  - Bool
+  - Char
+  - Int
+  - Float
+  - Double
+  - String
+- data structures
+  - lists
+  - tuples
+  - lists of tuples and tuples of lists
+- `:t <variable/function>` to view the type of the variable/function in ghci
+- haskell is lazy
+- haskell is statically typed
+- functions
+  - type definitions (**arrows are right-associative**)
+  - higher-order functions
+  - local definitions via `where`
+  - prefix vs infix
+- if statements
+  - inline if
+  - block if
+  - guards
+  - pattern matching
+- list comprehension
 
 <!-- ## Sketches
 
