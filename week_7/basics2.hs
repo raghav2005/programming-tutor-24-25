@@ -1,3 +1,6 @@
+addNums :: Num a => a -> a -> a
+addNums x y = x + y
+
 -- how would you increment all values in a list by 1?
 -- version 1
 addOne :: Int -> Int
@@ -27,3 +30,11 @@ multiply x y = x * y
 
 -- partially applied function
 double = multiply 2
+
+
+-- concat :: [Int] -> [Int] -> [Int]
+-- concat xs ys = xs ++ ys
+-- concat (x:xs) yall@(y:ys) = x : concat xs yall
+
+filterEvens :: [Int] -> [Int]
+filterEvens xs = filter (\x -> mod x 2 == 0) xs
