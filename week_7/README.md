@@ -89,8 +89,7 @@
 
   - `"esp_wpa2.h` - for eduroam
 
-  - `<WiFi.h>` - for other networks e.g. cellular 
-  - hotspot
+  - `<WiFi.h>` - for other networks e.g. cellular hotspot
   
   - we found it easier to code the hotspot version (although this was sometimes a bit sensitive - ensure you have "maximize compatibility" enabled for iOS devices)
 
@@ -145,6 +144,7 @@
         ```
 
   - nucleo side:
+  
     - before setup:
 
         ```c++
@@ -173,6 +173,7 @@
       - this should probably be put in a for loop for `x` amount of times - i.e. however many bytes were requested by the ESP32
 
     - `receiveEvent()` - i.e. read `x` bytes sent from ESP32:
+
       - same as [read `x` bytes sent from nucleo](#read-x-bytes)
 
 - ESP32 <-> ThingsBoard connection:
