@@ -6,8 +6,10 @@
 
 ## Leetcode
 
-- [Longest ZigZag Path in a Binary Tree (Medium)](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/)
+- [Leaf-Similar Trees (Easy)](https://leetcode.com/problems/leaf-similar-trees/)
   - [Python Solution](leetcode_sols/leetcode_1_sol.py)
+- [Longest ZigZag Path in a Binary Tree (Medium)](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/)
+  - [Python Solution](leetcode_sols/leetcode_2_sol.py)
 
 ## Haskell
 

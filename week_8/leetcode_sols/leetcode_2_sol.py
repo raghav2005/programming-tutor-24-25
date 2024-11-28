@@ -29,31 +29,30 @@ def create_tree(arr):
 
 
 class Solution:
-    def leafSimilar(self, root1, root2) -> bool:
-        self.arr = []
-        self.get_leaves(root1)
-        
-        x = self.arr
-        self.arr = []
+    def longestZigZag(self, root):
+        self.curr_max = 0
 
-        self.get_leaves(root2)
+        if root.left:
+            self.dfs(root.left, 0, 1)
         
-        return x == self.arr
+        if root.right:
+            self.dfs(root.right, 1, 1)
         
-    def get_leaves(self, node):
+        return self.curr_max
 
-        if node.left is None and node.right is None:
-            self.arr.append(node.val)
+    def dfs(self, node, curr_dir, length):
+        if not node:
             return
-        
-        else:
-            if node.left:
-                self.get_leaves(node.left)
-            if node.right:
-                self.get_leaves(node.right)
 
-        return
+        self.curr_max = max(self.curr_max, length)
+
+        if curr_dir == 0: # left
+            self.dfs(node.right, 1, length + 1)
+            self.dfs(node.left, 0, 1)
+        else: # right
+            self.dfs(node.left, 0, length + 1)
+            self.dfs(node.right, 1, 1)
 
 
 x = Solution()
-print(x.leafSimilar(create_tree([3,5,1,6,2,9,8,None,None,7,4]), create_tree([3,5,1,6,7,4,2,None,None,None,None,None,None,9,8])))
+print(x.longestZigZag(create_tree([1,None,1,1,1,None,None,1,1,None,1,None,None,None,1])))
