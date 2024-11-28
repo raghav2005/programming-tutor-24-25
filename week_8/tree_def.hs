@@ -35,12 +35,58 @@ inorder tree = go tree []
     go Empty acc = acc
     go (Node left val right) acc = go left (val : go right acc)
 
+
+-- python
+-- arr = []
+
+-- def inorder(node):
+--     global arr
+
+--     inorder(node.left)
+--     arr.append(node.value)
+--     inorder(node.right)
+
+
+betterPreOrder :: Tree a -> [a]
+betterPreOrder Empty = []
+betterPreOrder (Node left val right) = [val] ++ betterPreOrder left ++ betterPreOrder right
+
+betterInOrder :: Tree a -> [a]
+betterInOrder Empty = []
+betterInOrder (Node left val right) = betterInOrder left ++ [val] ++ betterInOrder right
+
+betterPostOrder :: Tree a -> [a]
+betterPostOrder Empty = []
+betterPostOrder (Node left val right) = betterPostOrder left ++ betterPostOrder right ++ [val]
+
 -- pre-order traversal
 preorder :: Tree a -> [a]
 preorder tree = go tree []
   where
     go Empty acc = acc
     go (Node left val right) acc = val : go left (go right acc)
+
+-- preorder (Node (Node Empty 5 Empty) 10 (Node Empty 15 (Node Empty 20 Empty))) => x
+
+-- go (Node (Node Empty 5 Empty) 10 (Node Empty 15 (Node Empty 20 Empty))) []
+
+-- 10 : go (Node Empty 5 Empty) (go (Node Empty 15 (Node Empty 20 Empty)) [])
+
+-- 10 : (5 : go Empty (go Empty [])) (go (Node Empty 15 (Node Empty 20 Empty)) [])
+
+-- 10 : (5 : []) (go (Node Empty 15 (Node Empty 20 Empty)) [])
+
+-- 10 : (5 : []) (15 : go Empty (go (Node Empty 20 Empty) []))
+
+-- 10 : (5 : []) (15 : go Empty (20 : go Empty (go Emtpy [])))
+
+-- 10 : (5 : []) (15 : go Empty [20])
+
+-- 10 : (5 : []) (15 : [20])
+
+-- 10 : (5 : []) [15, 20])
+
+-- [10, 5, 15, 20])
 
 -- post-order traversal
 postorder :: Tree a -> [a]
@@ -49,7 +95,7 @@ postorder tree = go tree []
     go Empty acc = acc
     go (Node left val right) acc = go left (go right (val : acc))
 
-
+-- NEXT TIME
 insert :: Ord a => a -> Tree a -> Tree a
 insert x Empty = Node Empty x Empty
 insert x (Node l v r)
