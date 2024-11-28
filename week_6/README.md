@@ -1,4 +1,4 @@
-# Week 5
+# Week 6
 
 - [Leetcode](#leetcode)
 - [Haskell](#haskell)
