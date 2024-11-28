@@ -87,7 +87,7 @@
 
 - internet connection:
 
-  - `"esp_wpa2.h` - for eduroam
+  - `"esp_wpa2.h"g` - for eduroam
 
   - `<WiFi.h>` - for other networks e.g. cellular hotspot
   
