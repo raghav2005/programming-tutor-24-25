@@ -13,6 +13,7 @@
 - [Week 11](#week-11)
 - [Week 12](#week-12)
 - [Week 13](#week-13)
+- [Week 14](#week-14)
 
 ## Week 1
 
@@ -65,3 +66,7 @@ Refer to [Week 12's README file](term_2/week_2/README.md) for what we did during
 ## Week 13
 
 Refer to [Week 13's README file](term_2/week_3/README.md) for what we did during this session.
+
+## Week 14
+
+Refer to [Week 14's README file](term_2/week_4/README.md) for what we did during this session.
