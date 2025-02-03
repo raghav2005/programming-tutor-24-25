@@ -17,7 +17,7 @@
 - abstract classes
 - public/private/protected
 
-Refer to [java_basics.java](java_basics.java), [](), and []() for explanations and examples.
+Refer to [Main.java](Main.java) for explanations and examples.
 
 <!-- ## Sketches
 
